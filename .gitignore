@@ -1,0 +1,15 @@
+# OSX
+.DS_Store
+
+# Android/IJ
+.idea
+.gradle
+local.properties
+.project
+
+# node.js
+node_modules/
+npm-debug.log
+
+# project
+database/db.config.js
