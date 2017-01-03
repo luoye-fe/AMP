@@ -1,0 +1,23 @@
+{
+  "name": "amp",
+  "version": "1.0.0",
+  "description": "api manage platform",
+  "main": "app.js",
+  "scripts": {
+    "dev": "",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luoye-fe/AMP.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": " <luoye 842891024@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luoye-fe/AMP/issues"
+  },
+  "homepage": "https://github.com/luoye-fe/AMP#readme"
+}
