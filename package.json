@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/luoye-fe/AMP/issues"
   },
-  "homepage": "https://github.com/luoye-fe/AMP#readme"
+  "homepage": "https://github.com/luoye-fe/AMP#readme",
+  "dependencies": {
+    "koa": "next",
+    "koa-router": "next",
+    "mongoose": "^4.7.6"
+  },
+  "engines": {
+    "node": ">= 7.0.0"
+  }
 }
