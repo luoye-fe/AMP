@@ -16,4 +16,4 @@ Now, i will plan for **v2**, you can find v1 code on this [branch](https://githu
 
 ## Demo
 
-[AMP](http://amp.luoye.pw/)
+[AMP](http://amp.luoyefe.com/)
