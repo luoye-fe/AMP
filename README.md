@@ -3,7 +3,7 @@ Api manage platform
 
 ## 地址
 
-[AMP](http://amp.luoye.pw/)
+[AMP](http://amp.luoyefe.com/)
 
 ## 缘由
 
