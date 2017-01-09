@@ -35,11 +35,13 @@ export default {
 		},
 		create_at: {
 			required: true,
-			type: 'timestamp'
+			type: 'timestamp',
+			default: Date.now
 		},
 		update_at: {
 			required: true,
-			type: 'timestamp'
+			type: 'timestamp',
+			default: Date.now
 		},
 		members: {
 			required: true,
@@ -72,11 +74,13 @@ export default {
 		},
 		create_at: {
 			required: true,
-			type: 'timestamp'
+			type: 'timestamp',
+			default: Date.now
 		},
 		update_at: {
 			required: true,
-			type: 'timestamp'
+			type: 'timestamp',
+			default: Date.now
 		},
 		parent_project: {
 			required: true,
@@ -89,8 +93,8 @@ export default {
 			body: Array
 		},
 		response: {
-			required: true,
-			type: 'object'
+			examples: Array,
+			params_detail: Array
 		},
 		remark: {
 			type: 'string'
