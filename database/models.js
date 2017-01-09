@@ -1,4 +1,4 @@
-export default {
+module.exports = {
 	users: {
 		email: {
 			required: true,
@@ -11,7 +11,7 @@ export default {
 		},
 		createTime: {
 			required: true,
-			type: 'timestamp'
+			type: 'date'
 		}
 	},
 	projects: {
@@ -35,12 +35,12 @@ export default {
 		},
 		create_at: {
 			required: true,
-			type: 'timestamp',
+			type: 'date',
 			default: Date.now
 		},
 		update_at: {
 			required: true,
-			type: 'timestamp',
+			type: 'date',
 			default: Date.now
 		},
 		members: {
@@ -74,12 +74,12 @@ export default {
 		},
 		create_at: {
 			required: true,
-			type: 'timestamp',
+			type: 'date',
 			default: Date.now
 		},
 		update_at: {
 			required: true,
-			type: 'timestamp',
+			type: 'date',
 			default: Date.now
 		},
 		parent_project: {
@@ -87,7 +87,7 @@ export default {
 			type: 'objectId'
 		},
 		request: {
-			url: String
+			url: String,
 			method: String,
 			query: Array,
 			body: Array
