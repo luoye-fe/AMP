@@ -1,5 +1,5 @@
 exports.index = async function() {
-	console.log(this.service);
-	this.body = await this.service.users.index(this.params);
+	// this.validate();
+	this.body = await this.service.users.index(this.query);
 	this.status = 200;
 };
