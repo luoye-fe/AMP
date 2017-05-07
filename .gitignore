@@ -18,3 +18,4 @@ database/db.config.js
 public/dist/
 logs/
 run/
+config/db.config.js
