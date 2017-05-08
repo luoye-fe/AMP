@@ -1,4 +1,4 @@
-const filterResponse = {
+const resultFilter = {
 	userName: 1,
 	email: 1,
 	_id: 0
@@ -14,7 +14,7 @@ module.exports = app => {
 				$or: [{
 					email: new RegExp('.*' + email + '.*', 'i')
 				}]
-			}, filterResponse).sort({ createTime: -1 }).limit(limit).skip((page - 1) * limit);
+			}, resultFilter).sort({ createTime: -1 }).limit(limit).skip((page - 1) * limit);
 			let result = {};
 			result.meta = {
 				total: users.length
@@ -23,9 +23,15 @@ module.exports = app => {
 			return result;
 		}
 		async show(params) {
+			if (!/^[0-9a-fA-F]{24}$/.test(params.id)) {
+				// it's not a valid ObjectId
+				return {
+					error: 123
+				}
+			}
 			let users = await this.ctx.model.users.find({
 				_id: params.id
-			}, filterResponse);
+			}, resultFilter);
 			let result = {};
 			result.meta = { total: users.length };
 			result.data = users;
