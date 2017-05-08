@@ -3,6 +3,10 @@ const dbConfig = require('./db.config.js');
 module.exports = appInfo => {
 	return {
 		keys: 'AMP',
+		middleware: ['errorHandler'],
+		errorHandler: {
+			match: '/api'
+		},
 		i18n: {
 			enable: false
 		},
