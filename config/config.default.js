@@ -16,6 +16,9 @@ module.exports = appInfo => {
 		view: {
 			enable: false
 		},
+		static: {
+			enable: false
+		},
 		security: {
 			ignore: '/api/',
 			csrf: {

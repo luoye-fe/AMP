@@ -6,5 +6,9 @@ module.exports = {
 	validate: {
 		enable: true,
 		package: 'egg-validate'
+	},
+	logrotator: {
+		enable: true,
+		package: 'egg-logrotator'
 	}
 };
