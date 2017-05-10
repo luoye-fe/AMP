@@ -1,6 +1,6 @@
 exports.index = async function() {
 	this.body = await this.service.users.index(this.query);
-	this.status = 200;
+	this.status = 201;
 };
 
 exports.show = async function() {

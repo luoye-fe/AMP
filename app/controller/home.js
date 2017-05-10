@@ -1,3 +1,3 @@
 exports.index = async function(ctx) {
-	ctx.body = 'hello world!';
+	ctx.body = 'server status ok';
 };

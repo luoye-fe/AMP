@@ -1,14 +1,19 @@
 module.exports = {
 	mongoose: {
 		enable: true,
-		package: 'egg-mongoose'
+		package: 'egg-mongoose',
 	},
 	validate: {
 		enable: true,
 		package: 'egg-validate'
 	},
-	logrotator: {
-		enable: true,
-		package: 'egg-logrotator'
+	static: {
+		enable: false
+	},
+	security: {
+		ignore: '/api/',
+		csrf: {
+			ignoreJSON: true,
+		}
 	}
 };

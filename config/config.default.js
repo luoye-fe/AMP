@@ -7,25 +7,7 @@ module.exports = appInfo => {
 		errorHandler: {
 			match: '/api'
 		},
-		i18n: {
-			enable: false
-		},
-		static: {
-			enable: false
-		},
-		view: {
-			enable: false
-		},
-		static: {
-			enable: false
-		},
-		security: {
-			ignore: '/api/',
-			csrf: {
-				ignoreJSON: true,
-			}
-		},
-		mongoose: {
+		mongoose : {
 			url: `mongodb://${dbConfig[appInfo.env].host}:${dbConfig[appInfo.env].port}/${dbConfig[appInfo.env].database}`,
 			options: {
 				user: dbConfig[appInfo.env].user,
